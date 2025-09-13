@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/235e91dd6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer|Aspiring Data Scientist </p>
+                <h1>Hi, I'm <span>Prajakta Narayanpure</span><br>from Maharashtra</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-header">
+                <h1 class="sub-title">About Me</h1>
+                <div class="about-intro">
+                    <div class="intro-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <p>I'm Prajakta Narayanpure, a Computer Science undergraduate specializing in web development. 
+                        I enjoy building responsive websites and software systems, 
+                        and I'm currently expanding my skills in Data Science and Generative AI.
+                        With a mix of technical expertise and problem-solving ability,
+                        I aim to create impactful, user-focused digital solutions.</p>
+                </div>
+            </div>
+
+            <div class="about-details">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">
+                        <i class="fa-solid fa-code"></i> Skills
+                    </p>
+                    <p class="tab-links" onclick="opentab('eduction')">
+                        <i class="fa-solid fa-graduation-cap"></i> Education
+                    </p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3>Programming Languages</h3>
+                            <p>Python, C++, Java (basic)</p>
+                        </div>
+                        <div class="skill-category">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>HTML, CSS, React.js, Node.js, SQL, PHP, Web Design</p>
+                        </div>
+                        <div class="skill-category">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h3>Data Science & AI</h3>
+                            <p>Statistics, Data Handling, Generative AI (training in progress)</p>
+                        </div>
+                        <div class="skill-category">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-tools"></i>
+                            </div>
+                            <h3>Tools & Platforms</h3>
+                            <p>MS Excel, Figma, Zapier, Database Management</p>
+                        </div>
+                        <div class="skill-category">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-cogs"></i>
+                            </div>
+                            <h3>Software Development</h3>
+                            <p>Data Structures, System Design, Database Integration</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-contents" id="eduction">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fa-solid fa-university"></i>
+                        </div>
+                        <div class="education-details">
+                            <h3>Bachelor of Computer Science</h3>
+                            <p class="institution">COSIT</p>
+                            <p class="year">2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------services------------------>
+<div id="Services">
+    <div class="container">
+       <h1 class="sub-title">My Services</h1> 
+       <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>I create responsive and user-friendly websites using modern technologies like HTML, CSS, React.js, Node.js, PHP, and SQL.
+             Whether it’s a personal website or a full-stack application, I ensure clean design, smooth functionality, and scalability.</p>
+             <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Data Science & AI Solutions</h2>
+            <p>I provide beginner to intermediate-level data analysis and visualization using Python, Excel, and statistics.
+                 Currently expanding into Generative AI, I explore intelligent solutions for handling and analyzing data.</p>
+             <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-airbnb"></i>
+            <h2>Digital Marketing & Automation</h2>
+            <p>With knowledge of digital marketing strategies, I help optimize online presence through SEO basics,
+                 social media management, and marketing automation using tools like Zapier.</p>
+             <a href="#">Learn more</a>
+        </div>
+        <!--<div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Software Development</h2>
+            <p>I design and develop software systems tailored to specific needs, such as inventory management, library systems, and customer record solutions. 
+                My focus is on building efficient, reliable, and easy-to-use applications</p>
+             <a href="#">learn more</a>
+        </div>-->
+       </div>
+    </div>
+</div>
+<!-------------------------------------Project------------------------------------>
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1> 
+        <div class="projects-list">
+            <div class="project">
+                <img src="images/proj-1.png" alt="Library Management System">
+                <div class="layer">
+                    <h3>Furniture Showroom Management</h3>
+                    <p>A software solution to manage furniture inventory, sales, and customer records with a user-friendly interface.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP/SQL</span>
+                        <span>CSS3</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/proj-2.png" alt="Furniture Showroom Management System">
+                <div class="layer">
+                    <h3>ColorCraft-Premium Wall Paints & Color Solutions</h3>
+                    <p>A responsive web platform for premium wall paints with smart color suggestions, product filtering, and design tools.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP/SQL</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i></a>
+                </div>
+            </div>
+             <div class="project">
+                <img src="images/work_3.jpeg" alt="Library Management System">
+                <div class="layer">
+                    <h3>Library Management System</h3>
+                    <p>A Python-based application to manage books, students, and borrowing/return activities with database integration.(Currenty Working on it)</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/proj-3.png" alt="Library Management System">
+                <div class="layer">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>A Python game with user vs computer mode using randomization and score tracking.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>GUI(TKinter)</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-solid fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------contact---------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>prajaktanarayanpure@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9028977890</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-square-linkedin"></i></a>
+                    <a href="https://github.com/settings/profile"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Prajakta_Narayanpure_Resume.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>2025 Prajakta N | Building ideas into reality</p>
+    </div>
+</div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx6Cigtl3KFaxvjrZ9dK4FzNenaDPavjvFGmibf9X11JGt9dhWTqPbxNXxIej_ubyStpg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  }) 
+</script>
+
+
+</body>
+</html>
